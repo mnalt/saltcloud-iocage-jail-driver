@@ -7,7 +7,9 @@ This is a driver for managing FreeBSD jails with [saltcloud](https://docs.saltst
 
 ## Installation
 Put the `iocage.py` file in a directory that saltstack will search for cloud drivers. For example, put
+
     extension_modules: /usr/local/etc/salt/extension_modules
+
 in your `master` configuration file and put the `iocage.py` file in the directory `/usr/local/etc/salt/extension_modules/clouds` directory.
 
 ## Configuration
