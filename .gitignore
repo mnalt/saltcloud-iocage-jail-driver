@@ -1,0 +1,9 @@
+pki/
+*~
+.*.swp
+master.sample
+minion.sample
+minion_id
+minion.d/_schedule.conf
+remote-formulas
+*.pyc
