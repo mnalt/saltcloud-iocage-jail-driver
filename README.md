@@ -54,23 +54,24 @@ The following options are available:
 ### Profile and Command-Line Parameters
 
 Sample profile configuration:
+
     profile1:
       provider: iocage-example
       properties:
-	ip4_addr: em0|192.168.1.42
+        ip4_addr: em0|192.168.1.42
       minion:
         master: 192.168.105.2
     profile2:
       provider: iocage-example
-	properties:
-	  ip4_addr: lo1|192.168.105.144
-	  exec_timeout: 120
+      properties:
+        ip4_addr: lo1|192.168.105.144
+        exec_timeout: 120
       image: "release:9.3-RELEASE"
     profile3:
       provider: iocage-example
-	properties:
-	  ip4_addr: lo1|192.168.105.145
-      image: "template:pre-saltet"
+        properties:
+          ip4_addr: lo1|192.168.105.145
+        image: "template:pre-saltet"
 
 The profile configuration allows you to specify the following parameters:
 
