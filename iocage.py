@@ -241,6 +241,8 @@ class IOCageHost:
             return self.jail_list
 
         for jail_line in jail_list_output.split('\n')[1:]:
+            if jail_line == '--- non iocage jails currently active ---':
+                break
             jail_entry = IOCageJail(None, self)
             jail_entry.parse_list_jail_line(jail_line)
             self.jail_list.append(jail_entry)
